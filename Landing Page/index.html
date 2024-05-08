@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Grand Luxury Hotel | Premium Retreat</title>
+    <style>
+         
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #cbecd5;
+            color: #333;
+        }
+
+        .header {
+            background-color: #1f7e53;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav__bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .nav__bar img {
+            max-width: 100px;
+        }
+
+        .nav__menu__btn {
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .nav__links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav__links li {
+            margin: 0 15px;
+        }
+
+        .nav__links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav__links a:hover {
+            color: #ffcc00;
+        }
+
+        .nav__btn {
+            background-color: #ffcc00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav__btn:hover {
+            background-color: #e6b800;
+        }
+
+        
+        .section__container {
+            padding: 60px 20px;
+        }
+
+        .section__subheader {
+            font-size: 1.2rem;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .section__header {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .section__description {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color:  #efdb23;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e0ce12;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <nav>
+        <div class="nav__bar">
+            <div class="logo">
+                <a href="#"><img src="assets/logo.png" alt="logo"></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn nav__btn">Book Now</button>
+    </nav>
+    <div class="section__container header__container" id="home">
+        <p>Welcome to</p>
+        <h1>Grand Luxury</h1>
+        <p>Where every moment is a pleasure </p>
+    </div>
+</header>
+
+<section class="section__container booking__container">
+    <form action="/" class="booking__form">
+        <div class="input__group">
+            <span><i class="ri-calendar-2-fill"></i></span>
+            <div>
+                <label for="check-in">CHECK-IN</label>
+                <input type="text" placeholder="Check In">
+            </div>
+        </div>
+        <div class="input__group">
+            <span><i class="ri-calendar-2-fill"></i></span>
+            <div>
+                <label for="check-out">CHECK-OUT</label>
+                <input type="text" placeholder="Check Out">
+            </div>
+        </div>
+        <div class="input__group">
+            <span><i class="ri-user-fill"></i></span>
+            <div>
+                <label for="guest">GUEST</label>
+                <input type="text" placeholder="Guest">
+            </div>
+        </div>
+        <div class="input__group input__btn">
+            <button class="btn">CHECK OUT</button>
+        </div>
+    </form>
+</section>
+
+<section class="section__container about__container" id="about">
+    <div class="about__image">
+        <img src="assets/about.jpg" alt="about">
+    </div>
+    <div class="about__content">
+        <p class="section__subheader">ABOUT US</p>
+        <h2 class="section__header">Embark on a Luxurious Odyssey </h2>
+        <p class="section__description">
+            At Grand Luxury Hotel, discover a world of unparalleled opulence, where impeccable service and extraordinary experiences await.
+             Immerse yourself in luxury and create timeless memories that will stay with you forever.
+        </p>
+        <div class="about__btn">
+            <button class="btn">Read More</button>
+        </div>
+    </div>
+</section>
+
+<section class="section__container room__container">
+    <p class="section__subheader">OUR ROOMS</p>
+    <h2 class="section__header">Exquisite Elegance </h2>
+    <div class="room__grid">
+        <div class="room__card">
+            <div class="room__card__image">
+                <img src="assets/viewofroom.jpg" alt="room">
+            </div>
+            <div class="room__card__details">
+                <h4>Beachfront Oasis </h4>
+                <p>Indulge in tranquil moments amid panoramic ocean vistas from your exclusive suite.</p>
+                 
+                <button class="btn">Book Now</button>
+            </div>
+        </div>
+        <div class
